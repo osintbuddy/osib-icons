@@ -1,0 +1,21 @@
+{
+  "base": "svg",
+  "aliases": [
+    "Monitoring Tool"
+  ],
+  "categories": [
+    "Monitoring-Tools",
+    "Networking-Tools"
+  ],
+  "update": {
+    "timestamp": "2024-10-20T17:24:03Z",
+    "author": {
+      "id": 71191962,
+      "name": "walkxcode"
+    }
+  },
+  "colors": {
+    "dark": "pingvin-dark",
+    "light": "pingvin"
+  }
+}

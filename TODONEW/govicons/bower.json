@@ -1,0 +1,33 @@
+{
+  "name": "govicons",
+  "description": "Govicons - Government font and CSS toolkit",
+  "version": "1.6.0",
+  "keywords": [
+    "government",
+    "font",
+    "css",
+    "icons",
+    "font-icon",
+    "icon",
+    "svg"
+  ],
+  "homepage": "https://govicons.io",
+  "dependencies": {},
+  "devDependencies": {},
+  "main": [
+    "./css/*",
+    "./fonts/*",
+    "./less/govicons.less",
+    "./scss/govicons.scss"
+  ],
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "src",
+    "*.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "*.md",
+    "./assets"
+  ]
+}

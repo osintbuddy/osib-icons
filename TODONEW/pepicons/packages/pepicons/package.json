@@ -1,0 +1,73 @@
+{
+  "name": "pepicons",
+  "version": "3.1.1",
+  "type": "module",
+  "sideEffects": false,
+  "description": "Retro icon set",
+  "productName": "Pepicons",
+  "author": "Luca Ban - Mesqueeb",
+  "funding": "https://github.com/sponsors/mesqueeb",
+  "license": "CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE",
+  "scripts": {
+    "build": "del-cli dist && rollup -c ./rollup.config.js"
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    "./svg/*": {
+      "import": "./svg/*",
+      "require": "./svg/*"
+    },
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    },
+    "./print": {
+      "import": {
+        "types": "./dist/print.d.ts",
+        "default": "./dist/print.js"
+      },
+      "require": {
+        "types": "./dist/cjs/print.d.cts",
+        "default": "./dist/cjs/print.cjs"
+      }
+    },
+    "./pop": {
+      "import": {
+        "types": "./dist/pop.d.ts",
+        "default": "./dist/pop.js"
+      },
+      "require": {
+        "types": "./dist/cjs/pop.d.cts",
+        "default": "./dist/cjs/pop.cjs"
+      }
+    },
+    "./pencil": {
+      "import": {
+        "types": "./dist/pencil.d.ts",
+        "default": "./dist/pencil.js"
+      },
+      "require": {
+        "types": "./dist/cjs/pencil.d.cts",
+        "default": "./dist/cjs/pencil.cjs"
+      }
+    },
+    "./dist/*": {
+      "import": "./dist/*",
+      "require": "./dist/*"
+    }
+  },
+  "files": [
+    "dist",
+    "svg"
+  ],
+  "dependencies": {},
+  "gitHead": "b9d99854c5f1a88b1bd6b50ed81b249feea5fcd9"
+}

@@ -1,0 +1,125 @@
+{
+  "name": "@pepicons/vue",
+  "version": "3.1.1",
+  "type": "module",
+  "sideEffects": false,
+  "author": "Luca Ban - Mesqueeb",
+  "funding": "https://github.com/sponsors/mesqueeb",
+  "license": "CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE",
+  "description": "Vue component for Pepicons",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.js"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/es/index.js"
+      }
+    },
+    "./icons": {
+      "require": {
+        "types": "./dist/cjs/icons.d.ts",
+        "default": "./dist/cjs/icons.js"
+      },
+      "import": {
+        "types": "./dist/icons.d.ts",
+        "default": "./dist/es/icons.js"
+      }
+    },
+    "./component": {
+      "require": {
+        "types": "./dist/cjs/components/Pepicon.vue.d.ts",
+        "default": "./dist/cjs/components/Pepicon.js"
+      },
+      "import": {
+        "types": "./dist/components/Pepicon.vue.d.ts",
+        "default": "./dist/es/components/Pepicon.js"
+      }
+    },
+    "./pencil": {
+      "require": {
+        "types": "./dist/cjs/icons/pencil/index.d.ts",
+        "default": "./dist/cjs/icons/pencil/index.js"
+      },
+      "import": {
+        "types": "./dist/icons/pencil/index.d.ts",
+        "default": "./dist/es/icons/pencil/index.js"
+      }
+    },
+    "./print": {
+      "require": {
+        "types": "./dist/cjs/icons/print/index.d.ts",
+        "default": "./dist/cjs/icons/print/index.js"
+      },
+      "import": {
+        "types": "./dist/icons/print/index.d.ts",
+        "default": "./dist/es/icons/print/index.js"
+      }
+    },
+    "./pop": {
+      "require": {
+        "types": "./dist/cjs/icons/pop/index.d.ts",
+        "default": "./dist/cjs/icons/pop/index.js"
+      },
+      "import": {
+        "types": "./dist/icons/pop/index.d.ts",
+        "default": "./dist/es/icons/pop/index.js"
+      }
+    },
+    "./pencil/*": {
+      "require": {
+        "types": "./dist/cjs/icons/pencil/*.d.ts",
+        "default": "./dist/cjs/icons/pencil/*.js"
+      },
+      "import": {
+        "types": "./dist/icons/pencil/*.d.ts",
+        "default": "./dist/es/icons/pencil/*.js"
+      }
+    },
+    "./print/*": {
+      "require": {
+        "types": "./dist/cjs/icons/print/*.d.ts",
+        "default": "./dist/cjs/icons/print/*.js"
+      },
+      "import": {
+        "types": "./dist/icons/print/*.d.ts",
+        "default": "./dist/es/icons/print/*.js"
+      }
+    },
+    "./pop/*": {
+      "require": {
+        "types": "./dist/cjs/icons/pop/*.d.ts",
+        "default": "./dist/cjs/icons/pop/*.js"
+      },
+      "import": {
+        "types": "./dist/icons/pop/*.d.ts",
+        "default": "./dist/es/icons/pop/*.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --force --config vite.config.dev.ts"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.39"
+  },
+  "dependencies": {
+    "pepicons": "^3.1.1"
+  },
+  "homepage": "https://github.com/cycraft/pepicons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cycraft/pepicons"
+  },
+  "bugs": "https://github.com/cycraft/pepicons/issues",
+  "gitHead": "b9d99854c5f1a88b1bd6b50ed81b249feea5fcd9"
+}

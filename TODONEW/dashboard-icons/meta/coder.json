@@ -1,0 +1,16 @@
+{
+  "base": "svg",
+  "aliases": [],
+  "categories": [],
+  "update": {
+    "timestamp": "2025-07-02T20:53:17.628824",
+    "author": {
+      "id": 141176710,
+      "login": "Qumumba"
+    }
+  },
+  "colors": {
+    "light": "coder-light",
+    "dark": "coder"
+  }
+}

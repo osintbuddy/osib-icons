@@ -1,0 +1,18 @@
+{
+  "base": "svg",
+  "aliases": [
+    "no-code-platform",
+    "app-builder"
+  ],
+  "categories": [
+    "Developer-Tools",
+    "Cloud-Computing"
+  ],
+  "update": {
+    "timestamp": "2024-06-01T17:32:11Z",
+    "author": {
+      "id": 10404337,
+      "name": "bmgalhardo"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "base": "svg",
+  "aliases": [
+    "Container Manager"
+  ],
+  "categories": [
+    "Containerization-&-Orchestration",
+    "Developer-Tools",
+    "Server-Panels"
+  ],
+  "update": {
+    "timestamp": "2025-01-05T19:39:40Z",
+    "author": {
+      "id": 150545,
+      "name": "ajgon"
+    }
+  }
+}

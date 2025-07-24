@@ -1,0 +1,70 @@
+{
+  "name": "@web3icons/react",
+  "homepage": "https://tokenicons.io",
+  "description": "React components for incorporating Web 3 Icons into React applications.",
+  "keywords": [
+    "crypto icons",
+    "crypto icons react",
+    "cryptocurrency react",
+    "react blockchain icons",
+    "icon components",
+    "crypto logos",
+    "coin icons"
+  ],
+  "version": "4.0.19",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./dynamic": {
+      "import": "./dist/dynamic/index.js",
+      "require": "./dist/dynamic/index.js"
+    },
+    "./icons": {
+      "import": "./dist/icons/index.js",
+      "require": "./dist/icons/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bun run clean && (cd ../utils && bun run pre-build:react) && bun run build:icons && bun run build:types && tsup",
+    "build:types": "tsc --outDir dist --declarationDir dist --declaration true",
+    "build:icons": "tsup 'src/icons/**/*.ts' --format esm --outDir dist/icons",
+    "dev": "bun run build -- --watch",
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,json}\" --log-level error",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@web3icons/common": "0.11.15",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@types/react": "^18.3.3",
+    "bun-types": "latest",
+    "tsup": "^8.0.2",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xa3k5/web3icons.git",
+    "directory": "packages/react"
+  }
+}

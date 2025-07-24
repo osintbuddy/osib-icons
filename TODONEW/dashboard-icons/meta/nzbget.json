@@ -1,0 +1,17 @@
+{
+  "base": "svg",
+  "aliases": [
+    "usenet-client",
+    "nzb-downloader"
+  ],
+  "categories": [
+    "Download-Managers"
+  ],
+  "update": {
+    "timestamp": "2025-06-30T19:56:11.216407",
+    "author": {
+      "id": 50492324,
+      "login": "Celian369"
+    }
+  }
+}

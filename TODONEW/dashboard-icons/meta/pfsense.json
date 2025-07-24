@@ -1,0 +1,24 @@
+{
+  "base": "svg",
+  "aliases": [
+    "Firewall",
+    "Router OS"
+  ],
+  "categories": [
+    "Operating-Systems",
+    "Networking-Tools",
+    "Security",
+    "Linux-Distributions"
+  ],
+  "update": {
+    "timestamp": "2024-10-20T17:24:03Z",
+    "author": {
+      "id": 71191962,
+      "name": "walkxcode"
+    }
+  },
+  "colors": {
+    "dark": "pfsense",
+    "light": "pfsense-light"
+  }
+}

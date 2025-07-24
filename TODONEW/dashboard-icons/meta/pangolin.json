@@ -1,0 +1,17 @@
+{
+  "base": "svg",
+  "aliases": [
+    "pangolin",
+    "pangolin-newt"
+  ],
+  "categories": [
+    "Cloud"
+  ],
+  "update": {
+    "timestamp": "2025-06-17T16:52:01.558150",
+    "author": {
+      "id": 9500326,
+      "login": "whitestrake"
+    }
+  }
+}

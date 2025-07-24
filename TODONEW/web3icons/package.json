@@ -1,0 +1,47 @@
+{
+  "name": "web3icons",
+  "description": "monorepo for web3 icons",
+  "private": false,
+  "author": "0xa3k5",
+  "scripts": {
+    "build": "turbo build && bun run post-build",
+    "build:packages": "bun run build:common && bun run build:utils && bun run build:core && bun run build:react",
+    "build:apps": "bun run build:website && bun run build:figma",
+    "build:common": "bun run build --filter @web3icons/common",
+    "build:utils": "bun run --filter @webi3cons/utils",
+    "build:core": "bun run build --filter @web3icons/core",
+    "build:react": "bun run build --filter @webi3cons/react",
+    "build:website": "bun run build --filter @webi3cons/website",
+    "build:figma": "bun run build --filter @webi3cons/figma-plugin",
+    "post-build": "bun run generate-icons-md && bun run lint && bun run format",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,json}\" --log-level error",
+    "add-icons": "bun run ./packages/utils/src/scripts/cli/add-icons.ts",
+    "delete-icons": "bun run ./packages/utils/src/scripts/cli/delete-icons.ts",
+    "generate-icons-md": "bun run ./packages/utils/src/scripts/generate-icons-md.ts",
+    "update-gecko-networks": "bun run ./packages/utils/src/scripts/gecko/get-networks.ts",
+    "update-gecko-coins": "bun run ./packages/utils/src/scripts/gecko/get-coins.ts"
+  },
+  "devDependencies": {
+    "@web3icons/eslint-config": "*",
+    "prettier": "^3.3.3",
+    "turbo": "v2.0.11",
+    "@changesets/cli": "^2.27.7"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.0.33",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "resolutions": {
+    "typescript": "5.3.3",
+    "esbuild": "^0.19.12"
+  },
+  "dependencies": {
+    "changesets": "^1.0.2"
+  }
+}

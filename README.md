@@ -1,4 +1,16 @@
-# Tabler Icons
+# OSIB Icons (based on Tabler Icons)
+
+TODO: Find an add more icons, some ideas:
+- https://www.svgrepo.com/collection/minimal-ui-icons/
+- https://www.svgrepo.com/collection/pictonic-logo-icons/6
+- https://www.svgrepo.com/collection/people-gestures-and-signs-icons/
+- https://www.svgrepo.com/collection/rpg-game-filled-icons/
+- https://www.svgrepo.com/collection/company-logo-icons/
+
+
+
+
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tabler/tabler-icons/main/.github/packages/og-core.png" alt="Tabler Icons" width="838">
