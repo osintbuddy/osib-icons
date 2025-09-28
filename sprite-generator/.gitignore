@@ -1,0 +1,7 @@
+notes
+main.py
+paths.log
+package-lock.json
+
+node_modules/
+dist/

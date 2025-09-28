@@ -1,0 +1,16 @@
+{
+  "name": "sprite-generator",
+  "version": "1.0.0",
+  "author": "OSIB",
+  "type": "module",
+  "description": "Generates an svg sprite from new and existing svgs",
+  "scripts": {
+    "build": "./run.sh",
+    "clean": "rm -rf dist/*"
+  },
+  "dependencies": {
+    "glob": "^11.0.3",
+    "gray-matter": "^4.0.3",
+    "svgo": "^4.0.0"
+  }
+}
