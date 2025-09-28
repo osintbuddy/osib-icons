@@ -68,8 +68,8 @@ function saveSvgsAndGoThroughFolders(absPath, params) {
       const file = files[i];
       const filepath = path.resolve(absPath, file.name);
 
-      if (file.isFile() && path.extname(filepath) === ".svg") {
-        let filename = path.basename(filepath).replace(".svg", "");
+      if (file.isFile() && path.extname(file.name) === ".svg") {
+        let filename = file.name.replace(".svg", "");
 
         if (params && params.subnames) {
           const parentDir = path.basename(path.dirname(filepath));
