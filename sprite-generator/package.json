@@ -11,6 +11,7 @@
   "dependencies": {
     "glob": "^11.0.3",
     "gray-matter": "^4.0.3",
+    "jsdom": "^27.0.1",
     "svgo": "^4.0.0"
   }
 }

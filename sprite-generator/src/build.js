@@ -29,6 +29,17 @@ const buildSprite = () => {
       const strokeLineCap = icon.attributes["stroke-linecap"];
       const strokeLineJoin = icon.attributes["stroke-linejoin"];
 
+      if (icon.name === "annotation-highlight") {
+        console.log(icon.attributes)
+        console.log(icon.content);
+        console.log(viewBox);
+        console.log(fill);
+        console.log(stroke);
+        console.log(strokeWidth);
+        console.log(strokeLineCap);
+        console.log(strokeLineJoin);
+      }
+
       const viewBoxAttr = viewBox ? `viewBox="${viewBox}"` : "";
 
       const fillAttr = fill ? `fill="${fill}"` : "";

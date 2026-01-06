@@ -12,6 +12,7 @@ const svgCollections = [
   // },
   { path: "networking-icons" },
   { path: "govicons/raw-svg" },
+  { path: "embedpdf" },
 ];
 
 // NOTE: Paths are absolute

@@ -14,7 +14,7 @@ that folder in svgCollections constant."
 echo ""
 read -p "Press Enter to start sprite generation" < /dev/tty
 node src/move.js
-npx svgo -rf ../icons/new/ ../icons/new_optimized/
+npx svgo -q -rf ../icons/new/ ../icons/new_optimized/
 mkdir ../icons/all
 cp ../icons/filled/* ../icons/all
 cp ../icons/outline/* ../icons/all

@@ -2,6 +2,7 @@ import path, { resolve, basename } from 'node:path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 import { globSync } from 'glob';
+import { JSDOM } from 'jsdom'
 
 export const types = ['all'];
 
@@ -31,11 +32,13 @@ const getSvgAttributes = (svg) => {
 
   const attributes = {};
 
+  const dom = new JSDOM(svg);
+  const domSvg = dom.window.document.querySelector("svg");
+
   for (const attr of attributesList) {
-    const attrRegex = new RegExp(`${attr}=\"([^\"]*)\"`, "gm");
-    const attrValue = attrRegex.exec(svg);
+    const attrValue = domSvg.getAttribute(attr);
     if (attrValue) {
-      attributes[attr] = attrValue[1]; // accessing the capturing group
+      attributes[attr] = attrValue;
     }
   }
 
@@ -50,8 +53,16 @@ export const getAllIcons = () => {
     const globPath = path.join(ICONS_SRC_DIR, `${type}/*.svg`);
 
     icons[type] = globSync(globPath).map((i) => {
-      const { _, content } = parseMatter(i),
+
+      const { data, content } = parseMatter(i),
             name = basename(i, '.svg');
+
+      if (name === "annotation-highlight") {
+        console.log("Path: " + i);
+        console.log("Name: " + name);
+        console.log(content)
+        console.log(data)
+      }
 
       return {
         name,
